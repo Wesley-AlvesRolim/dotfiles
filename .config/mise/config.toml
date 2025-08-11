@@ -1,0 +1,12 @@
+[tools]
+usage = "latest"
+node = { version = "20.18.1", postinstall = "corepack enable" }
+golang="1.24.2"
+java="openjdk-22"
+lazygit= "0.54.1"
+rust="1.85.1"
+gradle="7.6"
+python="3.13.0"
+lazydocker="0.24.1"
+uv = "latest"
+neovim = "0.11.3"

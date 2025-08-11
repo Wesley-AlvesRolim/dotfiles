@@ -1,0 +1,167 @@
+/*
+* Catppuccin Mocha Theme
+*/
+
+@define-color Rosewater #f5e0dc;
+@define-color Flamingo #f2cdcd;
+@define-color Pink #f5c2e7;
+@define-color Mauve #cba6f7;
+@define-color Red #f38ba8;
+@define-color Maroon #eba0ac;
+@define-color Peach #fab387;
+@define-color Yellow #f9e2af;
+@define-color Green #a6e3a1;
+@define-color Teal #94e2d5;
+@define-color Sky #89dceb;
+@define-color Sapphire #74c7ec;
+@define-color Blue #89b4fa;
+@define-color Lavender #b4befe;
+@define-color Text #cdd6f4;
+@define-color Subtext_1 #bac2de;
+@define-color Subtext_0 #a6adc8;
+@define-color Overlay_2 #9399b2;
+@define-color Overlay_1 #7f849c;
+@define-color Overlay_0 #6c7086;
+@define-color Surface_2 #585b70;
+@define-color Surface_1 #45475a;
+@define-color Surface_0 #313244;
+@define-color Base #1e1e2e;
+@define-color Mantle #181825;
+@define-color Crust #11111b;
+
+
+/*-----------------------------------------------------------------------------
+ * Global Styles
+ *---------------------------------------------------------------------------*/
+
+* {
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    font-family: JetBrainsMonoNL Nerd Font Propo, JetBrainsMonoNL;
+    font-size: 13px;
+}
+
+window#waybar {
+    background: @Crust;
+    color: @Text;
+}
+
+window#waybar.hidden {
+    opacity: 0.5;
+}
+
+tooltip {
+    background: @Base;
+    border-radius: 15px;
+    border: 1px solid @Overlay_0;
+}
+
+tooltip label {
+  color: @Text;
+}
+
+
+/*-----------------------------------------------------------------------------
+ * Module Styles
+ *---------------------------------------------------------------------------*/
+
+#clock,
+#tray,
+#memory,
+#network,
+#bluetooth,
+#battery,
+#wireplumber,
+#custom-power {
+    background: @Base;
+    padding: 6px 12px;
+    margin: 6px 3px;
+    border-radius: 6px;
+}
+
+/* --- Left Modules --- */
+
+#custom-logo {
+    color: @Blue;
+    font-size: 16px;
+    padding: 6px;
+    margin: 6px 3px 6px 5px;
+    border-radius: 6px 0;
+}
+
+#workspaces {
+    background: @Base;
+    margin: 6px 3px;
+    padding: 0px 6px;
+    border-radius: 15px;
+}
+
+#workspaces button {
+    color: @Text;
+    min-width: 0;
+    padding: 3px 6px;
+    margin: 0 3px;
+    border-radius: 50%;
+}
+
+#workspaces button:hover {
+    background: transparent;
+    color: @Sky;
+}
+
+#workspaces button.focused {
+    color: @Sapphire;
+}
+
+#workspaces button.urgent {
+    color: @Peach;
+}
+
+/* --- Center Modules --- */
+#clock {
+    color: @Mauve;
+}
+
+/* --- Right Modules --- */
+
+#tray {
+    padding: 6px 12px;
+}
+
+#network {
+    color: @Maroon;
+}
+
+#bluetooth {
+    color: @Blue;
+    font-family: JetBrainsMonoNL;
+}
+
+#wireplumber {
+    color: @Sapphire;
+}
+
+#memory {
+    color: @Flamingo;
+    padding: 3px 12px;
+}
+
+#battery {
+    color: @Sapphire;
+}
+
+#battery.charging {
+    color: @Green;
+}
+
+#battery.warning,
+#battery.critical,
+#battery.urgent {
+    color: @Red;
+}
+
+#custom-power {
+    color: @Red;
+    margin: 6px 6px 6px 3px;
+}
