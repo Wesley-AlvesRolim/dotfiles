@@ -1,5 +1,6 @@
 * {
     background: #181825;
+    background-90: #181825E5;
     background-alt: #1E1E2E;
     foreground: #FFFFFFFF;
     selected: #9399B2;
