@@ -72,7 +72,8 @@ alias vi="nvim"
 alias nv="nvim"
 alias lg="lazygit"
 alias cat="bat"
-alias lazysql="rainfrog"
+alias less="more"
+alias trash="gtrash"
 
 # COREPACK
 alias yarn="corepack yarn"
