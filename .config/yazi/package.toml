@@ -1,5 +1,17 @@
-[plugin]
-deps = []
+[[plugin.deps]]
+use = "TD-Sky/sudo"
+rev = "af70636"
+hash = "a94dcbe9266512806c677138e8591ddb"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:mount"
+rev = "e95c7b3"
+hash = "e1de3054c0d1a2d8dc6f007eadc0fa31"
+
+[[plugin.deps]]
+use = "boydaihungst/gvfs"
+rev = "8e97b2a"
+hash = "c746e1d1e09349caf0fa1ca03fe62ee4"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-mocha"
