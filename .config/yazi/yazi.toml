@@ -1,5 +1,5 @@
 [[opener.play]]
-run = 'vlc "$@"'
+run = 'vlc %s'
 orphan = true
 for = "unix"
 
@@ -9,7 +9,7 @@ orphan = true
 for = "windows"
 
 [[opener.edit]]
-run = '$EDITOR "$@"'
+run = '$EDITOR %s'
 block = true
 for = "unix"
 
@@ -19,5 +19,5 @@ block = true
 for = "windows"
 
 [[opener.open]]
-run = 'xdg-open "$@"'
+run = 'xdg-open %s'
 desc = "Open"

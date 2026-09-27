@@ -69,3 +69,6 @@ IgnorePath '/hal'
 
 # /timeshift
 IgnorePath '/timeshift'
+
+# /recup_dir
+IgnorePath '/recup_dir'

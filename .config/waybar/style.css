@@ -69,7 +69,7 @@ tooltip label {
 #clock,
 #tray,
 #memory,
-#network,
+#custom-network,
 #bluetooth,
 #battery,
 #wireplumber,
@@ -129,7 +129,7 @@ tooltip label {
     padding: 6px 12px;
 }
 
-#network {
+#custom-network {
     color: @Maroon;
 }
 
@@ -164,4 +164,9 @@ tooltip label {
 #custom-power {
     color: @Red;
     margin: 6px 6px 6px 3px;
+}
+
+#custom-network.noinet,
+#custom-network.disconnected {
+    color: @Red;
 }

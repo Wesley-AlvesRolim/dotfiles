@@ -9,7 +9,7 @@
 		"tray",
 		"memory",
 		"bluetooth",
-		"network",
+		"custom/network",
 		"battery",
 		"wireplumber",
 		"custom/power"
@@ -19,7 +19,9 @@
 		"active-only": false,
 		"all-outputs": true,
 		"format": "{icon}",
-		"on-click": "activate",
+		"on-click": "hyprctl dispatch 'hl.dsp.focus({ workspace = \"{id}\" })'",
+		"on-scroll-up": "hyprctl dispatch \"hl.dsp.focus({ workspace = tostring(tonumber($(hyprctl activeworkspace | awk '/workspace ID/ {print $3}'))-1) })\"",
+		"on-scroll-down": "hyprctl dispatch \"hl.dsp.focus({ workspace = tostring(tonumber($(hyprctl activeworkspace | awk '/workspace ID/ {print $3}'))+1) })\"",
 		"persistent-workspaces": {
 			"DP-1": [1, 2, 3],
 			"HDMI-A-1": [1, 2, 3],
@@ -55,18 +57,6 @@
 			"on-scroll-up": "shift_down",
 			"on-scroll-down": "shift_up"
 		}
-	},
-	"network": {
-		"format-wifi": "{icon}",
-		"format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
-		"format-ethernet": "󰀂",
-		"format-disconnected": "󰖪",
-		"tooltip-format-wifi": "{icon} {essid}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
-		"tooltip-format-ethernet": "󰀂  {ifname}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
-		"tooltip-format-disconnected": "Disconnected",
-		"on-click": "foot -e impala",
-		"interval": 5,
-		"nospacing": 1
 	},
 	"wireplumber": {
 		"tooltip-format": "Volume : {volume}%",
@@ -123,6 +113,15 @@
 			"critical": 10
 		},
 		"tooltip": false
+	},
+	"custom/network": {
+		"exec": "~/.config/waybar/scripts/network.sh",
+		"return-type": "json",
+		"interval": 1,
+		"format": "{}",
+		"tooltip": true,
+		"on-click": "foot -e impala",
+		"nospacing": 1
 	},
 	"custom/power": {
 		"format": "󰤆",

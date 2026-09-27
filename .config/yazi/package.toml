@@ -1,19 +1,24 @@
 [[plugin.deps]]
 use = "TD-Sky/sudo"
-rev = "af70636"
-hash = "a94dcbe9266512806c677138e8591ddb"
+rev = "e70796a"
+hash = "74129f78c811cfe7c694d86c3f634c26"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:mount"
-rev = "e95c7b3"
-hash = "e1de3054c0d1a2d8dc6f007eadc0fa31"
+rev = "f703392"
+hash = "b95f898e6dc60b52edbc415952e14395"
 
 [[plugin.deps]]
 use = "boydaihungst/gvfs"
-rev = "8e97b2a"
-hash = "c746e1d1e09349caf0fa1ca03fe62ee4"
+rev = "c92953c"
+hash = "d1e8d33ed36d339d5588f036dc3a9204"
+
+[[plugin.deps]]
+use = "simla33/ucp"
+rev = "79043fb"
+hash = "dee1ba1aa0085616b90022b1f2fafc50"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-mocha"
-rev = "d04a298"
-hash = "288a0dedd5d13b28605cf82c05326dcd"
+rev = "20b47bf"
+hash = "ce320f877fe709b189433941aba747c4"

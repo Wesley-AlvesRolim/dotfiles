@@ -18,6 +18,7 @@ AddPackage kitty # A modern, hackable, featureful, OpenGL-based terminal emulato
 AddPackage libpulse # A featureful, general-purpose sound server (client library)
 AddPackage linux # The Linux kernel and modules
 AddPackage linux-firmware # Firmware files for Linux - Default set
+AddPackage linux-headers # Headers and scripts for building modules for the Linux kernel
 AddPackage nano # Pico editor clone with enhancements
 AddPackage openssh # SSH protocol implementation for remote login, command execution and file transfer
 AddPackage pipewire # Low-latency audio/video router and processor
@@ -62,7 +63,6 @@ AddPackage --foreign yay-debug # Detached debugging symbols for yay
 
 AddPackage acpi # Client for battery, power, and thermal readings
 AddPackage appmenu-gtk-module # Application Menu GTK+ Module
-AddPackage atac # A simple API client (postman like) in your terminal
 AddPackage bat # Cat clone with syntax highlighting and git integration
 AddPackage bluez # Daemons for the bluetooth protocol stack
 AddPackage bluez-utils # Development and debugging utilities for the bluetooth protocol stack
@@ -72,7 +72,6 @@ AddPackage chromium # A web browser built for speed, simplicity, and security
 AddPackage clang # C language family frontend for LLVM
 AddPackage cliphist # wayland clipboard manager
 AddPackage cmake # A cross-platform open-source make system
-AddPackage code # The Open Source build of Visual Studio Code (vscode) editor
 AddPackage docker # Pack, ship and run any application as a lightweight container
 AddPackage docker-compose # Fast, isolated development environments using Docker
 AddPackage eza # A modern replacement for ls (community fork of exa)
@@ -112,7 +111,7 @@ AddPackage powertop # A tool to diagnose issues with power consumption and power
 AddPackage prismlauncher # Minecraft launcher with ability to manage multiple instances
 AddPackage qt5ct # Qt5 Configuration Utility
 AddPackage qt6ct # Qt 6 Configuration Utility
-AddPackage rainfrog # A database management TUI for Postgres
+AddPackage rofi # A window switcher, application launcher and dmenu replacement
 AddPackage rofi-wayland # A window switcher, run dialog and dmenu replacement - fork with wayland support
 AddPackage rofimoji # Emoji, unicode and general character picker for rofi and rofi-likes
 AddPackage samba # SMB Fileserver and AD Domain server
@@ -120,6 +119,7 @@ AddPackage scrcpy # Display and control your Android device
 AddPackage tela-circle-icon-theme-dracula # A flat colorful design icon theme - dracula variant
 AddPackage telegram-desktop # Official Telegram Desktop client
 AddPackage tmux # Terminal multiplexer
+AddPackage ttf-jetbrains-mono-nerd # Patched font JetBrains Mono from nerd fonts library
 AddPackage ufw # Uncomplicated and easy to use CLI tool for managing a netfilter firewall
 AddPackage unarchiver # unar and lsar: Objective-C tools for uncompressing archive files
 AddPackage unrar # The RAR uncompression program
@@ -156,15 +156,12 @@ AddPackage --foreign android-studio # The official Android IDE (Stable branch)
 AddPackage --foreign bluetuith-bin # A TUI based bluetooth manager
 AddPackage --foreign catppuccin-cursors-mocha # Soothing pastel mouse cursors - Mocha
 AddPackage --foreign codelldb-bin # A native debugger extension for VSCode based on LLDB. Also known as vscode-lldb (NOT lldb-vscode)
-AddPackage --foreign cpupower-gui # A GUI utility to set CPU frequency limits
 AddPackage --foreign luajit-tiktoken-bin # binding of rust tiktoken to lua
 AddPackage --foreign ngrok # A tunneling, reverse proxy for developing and understanding networked, HTTP services
 AddPackage --foreign reiserfsprogs # Reiserfs utilities
-AddPackage --foreign ripdrag-git # Drag and drop files to and from the terminal
-AddPackage --foreign simple-sddm-theme-2-git # Simple theme variant for the SDDM Login Manager using Qt6
+AddPackage --foreign ripdrag # Drag and drop files to and from the terminal
+AddPackage --foreign sddm-astronaut-theme # Modern looking sddm qt6 theme.
 AddPackage --foreign slack-desktop # Slack Desktop (Beta) for Linux
-AddPackage --foreign trashy # a cli system trash manager, alternative to rm and trash-cli
-AddPackage --foreign ttf-jetbrains-mono-nf # JetBrains Mono nerd font
 AddPackage --foreign ttf-league-spartan # A geometric sans-serif revival of ATF’s classic Spartan
 AddPackage --foreign ventoy-bin # A new bootable USB solution
 AddPackage --foreign zathura-git # Minimalistic document viewer
@@ -174,9 +171,6 @@ AddPackage --foreign zen-browser-bin # Performance oriented Firefox-based web br
 # qui 31 jul 2025 14:20:32 -03 - Unknown foreign packages
 
 
-AddPackage --foreign rtl8812au-dkms-git # rtl8812AU chipset driver with firmware v5.13.6
-AddPackage --foreign rtl8821ce-dkms-git # rtl8821CE driver with firmware
-AddPackage --foreign rtl88x2bu-dkms-git # Kernel module for Realtek rtl88x2bu WiFi chipset
 AddPackage --foreign rtw88-dkms-git # Driver for Realtek 802.11ac wireless chips
 
 
@@ -203,4 +197,240 @@ AddPackage qsynth # Qt GUI for FluidSynth
 
 
 AddPackage --foreign alsa-utils-git # Advanced Linux Sound Architecture - Utilities
+
+
+
+# dom 17 ago 2025 15:45:57 -03 - Unknown packages
+
+
+AddPackage python-docutils # Set of tools for processing plaintext docs into formats such as HTML, XML, or LaTeX
+AddPackage xmlto # Convert xml to many other formats
+
+
+# dom 17 ago 2025 15:45:58 -03 - Missing packages
+
+
+RemovePackage wofi
+
+
+# qua 20 ago 2025 19:14:43 -03 - Unknown packages
+
+
+AddPackage gvfs # Virtual filesystem implementation for GIO
+AddPackage gvfs-afc # Virtual filesystem implementation for GIO - AFC backend (Apple mobile devices)
+AddPackage gvfs-dnssd # Virtual filesystem implementation for GIO - DNS-SD and WebDAV backend (macOS file sharing)
+AddPackage gvfs-goa # Virtual filesystem implementation for GIO - Gnome Online Accounts backend (e.g. OwnCloud)
+AddPackage gvfs-mtp # Virtual filesystem implementation for GIO - MTP backend (Android, media player)
+AddPackage gvfs-nfs # Virtual filesystem implementation for GIO - NFS backend
+AddPackage gvfs-smb # Virtual filesystem implementation for GIO - SMB/CIFS backend (Windows file sharing)
+AddPackage gvfs-wsdd # Virtual filesystem implementation for GIO - Web Services Dynamic Discovery backend (Windows discovery)
+
+
+# qua 20 ago 2025 19:14:44 -03 - Missing packages
+
+
+RemovePackage python-docutils
+RemovePackage xmlto
+
+
+# qui 28 ago 2025 15:40:38 -03 - Unknown packages
+
+
+AddPackage less # A terminal based program for viewing text files
+AddPackage python-docutils # Set of tools for processing plaintext docs into formats such as HTML, XML, or LaTeX
+AddPackage xmlto # Convert xml to many other formats
+
+
+# qui 28 ago 2025 15:40:39 -03 - Unknown foreign packages
+
+
+AddPackage --foreign jira-cli-git # Feature-rich interactive Jira command line (git version)
+
+
+# qui 04 set 2025 13:08:05 -03 - Unknown packages
+
+
+AddPackage cpupower # Linux kernel tool to examine and tune power saving related features of your processor
+
+
+# qui 04 set 2025 13:08:05 -03 - Missing packages
+
+
+RemovePackage prismlauncher
+
+
+
+# sáb 06 set 2025 15:36:52 -03 - Missing packages
+
+
+RemovePackage rofi-wayland
+
+
+# sáb 06 set 2025 15:36:52 -03 - Missing foreign packages
+
+
+RemovePackage --foreign jira-cli-bin-debug
+
+
+# sáb 13 set 2025 12:00:41 -03 - Unknown packages
+
+
+AddPackage xorg-xhost # Server access control program for X
+
+
+# sáb 13 set 2025 12:00:41 -03 - Unknown foreign packages
+
+
+AddPackage --foreign sddm-astronaut-theme # Modern looking sddm qt6 theme.
+
+
+# sáb 13 set 2025 12:00:41 -03 - Missing foreign packages
+
+
+RemovePackage --foreign ventoy-bin-debug
+RemovePackage --foreign yay-debug
+
+
+# qui 09 out 2025 22:44:12 -03 - Unknown packages
+
+
+AddPackage reflector # A Python 3 module and script to retrieve and filter the latest Pacman mirror list.
+AddPackage tailscale # A mesh VPN that makes it easy to connect your devices, wherever they are.
+AddPackage wayvnc # VNC server for wlroots-based Wayland compositors
+AddPackage wireguard-tools # next generation secure network tunnel - tools for configuration
+
+
+# qui 09 out 2025 22:44:12 -03 - Unknown foreign packages
+
+
+AddPackage --foreign code-marketplace # Enable vscode marketplace in Code OSS
+AddPackage --foreign unityhub # The Unity Hub is a standalone application that streamlines the way you find, download, and manage your Unity Projects and installations.
+
+
+# sex 19 dez 2025 20:23:09 -03 - Unknown packages
+
+
+AddPackage alsa-utils # Advanced Linux Sound Architecture - Utilities
+AddPackage libappindicator # Allow applications to extend a menu via Ayatana indicators in Unity, KDE or Systray
+AddPackage qjackctl # A Qt front-end for the JACK low-latency audio server
+
+
+# sex 19 dez 2025 20:23:10 -03 - Missing packages
+
+
+RemovePackage libappindicator-gtk3
+
+
+# sex 19 dez 2025 20:23:10 -03 - Unknown foreign packages
+
+
+AddPackage --foreign apidog-bin # Design. Debug. Test. Document. Mock.Build APIs Faster & Together.
+AddPackage --foreign mongodb-compass-bin # The official GUI for MongoDB - binary version
+AddPackage --foreign resterm-bin # Terminal REST client for .http/.rest files with HTTP, GraphQL and gRPC support
+
+
+# sex 19 dez 2025 20:23:10 -03 - Missing foreign packages
+
+
+RemovePackage --foreign alsa-utils-git
+RemovePackage --foreign timeshift-autosnap
+
+
+
+# seg 23 fev 2026 09:09:06 -03 - Unknown packages
+
+
+AddPackage linux-lts # The LTS Linux kernel and modules
+AddPackage linux-lts-headers # Headers and scripts for building modules for the LTS Linux kernel
+AddPackage reaper # A complete digital audio production application for computers
+AddPackage vim-runtime # None
+AddPackage vulkan-mesa-implicit-layers # None
+AddPackage zlib-ng # zlib replacement with optimizations for next generation systems
+
+
+# seg 23 fev 2026 09:09:06 -03 - Unknown foreign packages
+
+
+AddPackage --foreign intellij-idea-community-edition-bin # an open-source IDE for Java, Groovy, Kotlin, Scala and Android development.
+AddPackage --foreign superseedr # A BitTorrent Client in your Terminal
+
+
+# sáb 21 mar 2026 08:52:17 -03 - Unknown foreign packages
+
+
+AddPackage --foreign firefox-bin # Standalone web browser from mozilla.org - Static binaries from upstream
+
+
+# qui 23 abr 2026 12:17:05 -03 - Unknown packages
+
+
+AddPackage postgresql # Sophisticated object-relational DBMS
+AddPackage trash-cli # Command line trashcan (recycle bin) interface
+
+
+# qui 23 abr 2026 12:17:05 -03 - Missing packages
+
+
+RemovePackage neovim
+RemovePackage webkit2gtk
+
+
+# qui 23 abr 2026 12:17:05 -03 - Unknown foreign packages
+
+
+AddPackage --foreign postman-bin # Build, test, and document your APIs faster
+AddPackage --foreign webkit2gtk # Web content engine for GTK
+
+
+
+# seg 07 set 2026 11:44:33 -03 - Unknown packages
+
+
+AddPackage efibootmgr # Linux user-space application to modify the EFI Boot Manager
+AddPackage ethtool # Utility for controlling network drivers and hardware
+AddPackage github-cli # The GitHub CLI
+AddPackage resvg # SVG rendering library and CLI
+AddPackage ydotool # Generic command-line automation tool (no X!)
+AddPackage yt-dlp # A youtube-dl fork with additional features and fixes
+
+
+# seg 07 set 2026 11:44:34 -03 - Missing packages
+
+
+RemovePackage telegram-desktop
+
+
+# seg 07 set 2026 11:44:34 -03 - Unknown foreign packages
+
+
+AddPackage --foreign nettui-bin # Unified TUI for Wi-Fi and Ethernet
+AddPackage --foreign r8168-dkms # A kernel module for Realtek 8168 network cards (DKMS version)
+AddPackage --foreign telegram-desktop-bin # Official desktop version of Telegram messaging app - Static binaries
+
+
+# seg 07 set 2026 11:44:34 -03 - Missing foreign packages
+
+
+RemovePackage --foreign firefox-bin
+RemovePackage --foreign postman-bin
+
+
+# sáb 26 set 2026 10:52:56 -03 - Unknown packages
+
+
+AddPackage exfatprogs # exFAT filesystem userspace utilities for the Linux Kernel exfat driver
+AddPackage inetutils # A collection of common network programs
+AddPackage nemo # File manager for Cinnamon (Nautilus fork)
+
+
+# sáb 26 set 2026 10:52:56 -03 - Missing packages
+
+
+RemovePackage dolphin
+
+
+# sáb 26 set 2026 11:53:23 -03 - Unknown packages
+
+
+AddPackage zoxide # A smarter cd command for your terminal
 

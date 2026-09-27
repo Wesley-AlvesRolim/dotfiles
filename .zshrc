@@ -43,7 +43,9 @@ zinit snippet 'https://github.com/ohmyzsh/ohmyzsh/raw/master/plugins/git/git.plu
 zinit snippet 'https://github.com/ohmyzsh/ohmyzsh/raw/master/plugins/mise/mise.plugin.zsh'
 zinit ice as"completion"
 zinit snippet 'https://github.com/docker/cli/blob/master/contrib/completion/zsh/_docker'
+zinit light bilelmoussaoui/flatpak-zsh-completion
 zinit light marlonrichert/zsh-hist
+zinit light splixx05/zsh-yazi-mount
 
 
 # zsh configuration
@@ -74,11 +76,12 @@ alias lg="lazygit"
 alias cat="bat"
 alias less="more"
 alias trash="gtrash"
+alias clause="openclaude"
 
 # COREPACK
-alias yarn="corepack yarn"
-alias yarnpkg="corepack yarnpkg"
-alias pnpm="corepack pnpm"
+# alias yarn="corepack yarn"  # corepack removed in Node 25+
+# alias yarnpkg="corepack yarnpkg"  # corepack removed in Node 25+
+# alias pnpm="corepack pnpm"  # corepack removed in Node 25+; pnpm installed at ~/.local/share/pnpm
 
 # pnpm
 export PNPM_HOME="/home/wesley/.local/share/pnpm"
@@ -87,10 +90,6 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
-
-# ATAC
-export ATAC_KEY_BINDINGS="~/.config/atac/vim_key_bindings.toml"
-export ATAC_THEME="~/.config/atac/insomnia_theme.toml"
 
 # yazi
 function y() {
@@ -105,7 +104,6 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 
 # Dev Manager
-eval "$(mise activate zsh)"
 eval "$(/usr/bin/mise activate zsh)"
 
 # Setopt
@@ -121,3 +119,13 @@ setopt hash_list_all          # hash everything before completion
 
 # UV python
 eval "$(uv generate-shell-completion zsh)"
+
+# Jira CLI
+export JIRA_PAGER="bat --paging=always"
+
+# Claude
+alias claude-mem='/home/wesley/.bun/bin/bun "/home/wesley/.claude/plugins/cache/thedotmack/claude-mem/10.6.2/scripts/worker-service.cjs"'
+
+
+# uv
+export PATH="/home/wesley/.local/bin:$PATH"
