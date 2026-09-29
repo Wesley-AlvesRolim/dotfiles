@@ -117,7 +117,6 @@
 	"custom/network": {
 		"exec": "~/.config/waybar/scripts/network.sh",
 		"return-type": "json",
-		"interval": 1,
 		"format": "{}",
 		"tooltip": true,
 		"on-click": "foot -e impala",
